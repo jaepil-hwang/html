@@ -1,0 +1,19 @@
+<!doctype html>
+
+  <head>
+    <title> Javascript </title>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+      function sync() {
+        var title0 = document.getElementById('title');
+        var output0 = document.getElementById('output');
+        output0.innerHTML = title0.value;
+      }
+    </script>
+  </head>
+  <body>
+    <div style="background-color:gray;" id="output"> 출력내용 </div>
+    <input type="text" value="초기값" id="title" onchange="sync()" />
+  </body>
+
+</html>

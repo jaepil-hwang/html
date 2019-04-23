@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <title> Javascript </title>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+      var member = {
+        'Nickname' : 'Falcon',
+        'Age' : '15'
+      };
+      document.write(member['Nickname'] + "<br />");
+      document.write(member.Age + "<br />");
+
+      for (var key in member) {
+        document.write("key : " + key + ",  value : " + member[key] + "<br />");
+      }
+
+        document.write("<br />");
+
+      var remember = {
+        'list' : {'Nickname' : 'Falcon','Age' : '15'},
+        'show' : function() {
+          for (var key in this.list) {
+            document.write("key : " + key + ",  value : " + this.list[key] + "<br />");
+          }
+        }
+      };
+
+      remember.show();
+
+    </script>
+  </head>
+  <body>
+  </body>
+
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+
+  <head>
+    <title> Javascript </title>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+
+//    test 1
+      var age = 30;
+      var job = '프로그래머';
+      function introduce () {
+        alert('저는 ' + age + '세의 ' + job + ' 입니다');
+      }
+      introduce();
+
+//    test 2
+      var person = new Object();
+          person.age1 = 30;
+          person.job1 = '프로그래머';
+          person.introduce1 = function() {
+            alert('저는 ' + this.age1 + '세의 ' + this.job1 + ' 입니다');
+          };
+      person.introduce1();
+
+//    test 3
+      var person9 = {
+          age9 : 30,
+          job9 : '프로그래머',
+          introduce9 : function() {
+            alert('저는 ' + this.age9 + '세의 ' + this.job9 + ' 입니다');
+            },
+          work : function() {
+            alert('coding');
+            }
+          }
+      person9.introduce9();
+      person9.work();
+
+    </script>
+  </head>
+  <body>
+  </body>
+
+</html>

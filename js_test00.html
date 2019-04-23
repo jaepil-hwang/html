@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title> 자바스크립트 연습하기</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h2> 자바스크립트 문자열 바꾸기 </h2>
+    <p> This example writes "Hello JavaScript!" into an HTML element with id="demo":</p>
+    <p id="demo"></p>
+    <p id="btx"> 이 문장을 치환함 </p>
+    <button type="button" onclick="myFunction()"> Click ME! </button>
+    <script>
+      document.getElementById("demo").innerHTML="Hello JavaScript!";
+      function myFunction() {
+        document.getElementById("btx").innerHTML="문자열 출력 함수 연결"; 
+        document.getElementById("btx").style.fontSize="25px";
+        document.getElementById("btx").style.color="#ff0000";
+        document.getElementById("btx").style.backgroundColor="#0000ff";
+      }
+    </script>
+
+  </body>
+</html>

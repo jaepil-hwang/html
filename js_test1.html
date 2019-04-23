@@ -1,0 +1,30 @@
+﻿<!doctype html>
+<html>
+
+   <head>
+       <title> Javascript test </title>
+       <meta charset="utf-8">
+       <script type="text/javascript">
+           var id = "hjp";
+           var userid = "";
+           var result = 0;
+
+           while(result==0) {
+              var userid = prompt("아이디를 입력하세요.", "아이디");
+              if (userid=="") {
+                 }
+              else if (userid==id) { result=1; }
+                   else {
+                        alert("아이디가 상이합니다.");
+                        result=0;
+                      }
+           }
+          document.write("입력확인");
+       </script>
+
+   </head>
+
+   <body>
+   </body>
+
+</html>

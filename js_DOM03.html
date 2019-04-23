@@ -1,0 +1,53 @@
+<!doctype html>
+
+  <head>
+    <title> Javascript - 메뉴선택화면</title>
+    <meta charset="utf-8">
+    <style>
+      .hide { display : none}
+      #menu { padding-left : 0}
+      #nenu li { float : left; margin-left : 20px;}
+      #canvas { clear : both;}
+    </style>
+  </head>
+  <body>
+    <ul id="menu">
+      <li><a id="ski" href="#tab1">스키</a></li>
+      <li><a id="basketball" href="#tab2">농구</a></li>
+      <li><a id="football" href="#tab3">축구</a></li>
+    </ul>
+    <div id="canvas">
+      <div id="ski_img" class=""><img src="ski.jpg" width="400" height="400" /></div>
+      <div id="basketball_img" class="hide"><img src="basketball.jpg" width="400" height="400"/></div>
+      <div id="football_img" class="hide"><img src="football.jpg" width="400" height="400"/></div>
+    </div>
+    <script type="text/javascript">
+      function addEvent(el, eType,fn, uC) {
+        if (el.addEventListener) {
+                  el.addEventListener(eType, fn, uC);
+                  return true;
+              } else if (el.attachEvent) {
+                  return el.attachEvent('on' + eType, fn);
+              } else {
+                  el['on' + eType] = fn;
+              }
+          }
+      function clickHandler(e) {
+        var id = e.target.id;
+        var t = document.getElementById(e.target.id+'_img');
+        var p = document.getElementById('canvas');
+        for ( var i = 0 ; i < p.childNodes.length ; i++) {
+          var c = p.childNodes[i];
+          if (c.nodeName == 'DIV') {
+            c.setAttribute('class', 'hide');
+          }
+        }
+        t.setAttribute('class', '');
+      }
+      addEvent(document.getElementById('ski'), 'click', clickHandler)
+      addEvent(document.getElementById('basketball'), 'click', clickHandler)
+      addEvent(document.getElementById('football'), 'click', clickHandler)
+    </script>
+  </body>
+
+</html>
