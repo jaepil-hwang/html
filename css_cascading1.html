@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Cascading </title>
+    <meta charset="utf-8" />
+    <style>
+      body {
+        color : red;
+        font-size : 15px !important;
+        }
+        #color {
+          color : blue;
+          font-size : 20px;
+        }
+        .col {
+          color : green !important;
+          font-size : 25px;
+        }
+    </style>
+  </head>
+  <body style="color:powderblue" id="color" class="col">
+    body 글자색은 태그의 직접선언부터 id, class, 태크를 전부 포함하고 있을때 무엇이 먼저 적용되는지 확인하는 예시임<br /><br />
+    첫번째는 Powderblue 즉, 태그 바로 옆의 style이 제일 먼저 실행이 되고 나머지는 적용이 되지 않고 무시 되어 버림<br /><br />
+    !important 라는 명령어는 속성값 안에 넣어주시면 우선순위에 상관없이 먼저 실행됨
+  </body>
+</html>

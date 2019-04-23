@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title> margin 확인 </title>
+    <meta charset="utf-8" />
+    <style>
+      h4 {
+        border : 1px solid red;
+        margin : 100px;
+        padding : 20px;
+      }
+      #empty {
+        border : 2px solid tomato;
+        margin-top : 50px;
+        margin-bottom : 100px;
+      }
+      #normal {
+        background-color : powderblue;
+        magring-top : 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h4> 1번. Hello world - 위, 아래, 왼쪽, 오른쪽 네방향에 margin 적용됨 </h4>
+    <h4> 2번. Hello world - 1번라인과 2번라인 사이의 margin은 겹침 현상이 발생함 (1번 아래여백과 2번 위여백중 큰값이 적용됨)</h4>
+    <br />
+    <div id="empty"> </div>
+    <div id="normal"> normal 라인 </div>
+  </body>
+</html>

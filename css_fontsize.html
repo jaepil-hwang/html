@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title> Font-Size 활용하기 </title>
+    <meta charset="utf-8">
+    <style>
+      html {
+        color : #00ff00;
+        font-size : 24px;
+      }
+      body {
+        color : blue;
+        font-size : 48px;
+      }
+      #em {
+        font-size : 1em;
+      }
+      #rem {
+        font-size : 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <p> 여기는 body 의 font-size  48px을 적용함 </p>
+    <p> em 은 부모의 속성을 상속 받음 (요즘은 잘 사용하지 않음) </p>
+    <p style="font-size:1em"> 여기는 1em 의 font-size을 적용함 ( em은 부모(body)의 font-size 속성을 상속받음)</p>
+    <p style="font-size:2em"> 여기는 2em 의 font-size을 적용함 ( em은 부모(body)의 font-size 속성을 상속받음)</p>
+    <p style="font-size:3em"> 여기는 3em 의 font-size을 적용함 ( em은 부모(body)의 font-size 속성을 상속받음)</p>
+    <br />
+    <p> rem 은 html의 속성을 상속 받음 (가장 많이 사용함) </p>
+    <p style="font-size:1rem"> 여기는 1rem 의 font-size을 적용함 ( rem은 html의 font-size 속성을 상속받음)</p>
+    <p style="font-size:2rem"> 여기는 2rem 의 font-size을 적용함 ( rem은 html의 font-size 속성을 상속받음)</p>
+    <p style="font-size:3rem"> 여기는 3rem 의 font-size을 적용함 ( rem은 html의 font-size 속성을 상속받음)</p>
+  </body>
+</html>

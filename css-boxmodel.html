@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title> box model </title>
+    <meta charset="utf-8" />
+    <style>
+        p, a {
+          border : 10px dotted blue;
+          padding : 20px;
+          margin : 40px;
+          width : 120px;
+        }
+        img {
+          border-width : 2px;
+          border-style : solid;
+          border-color : red;
+        }
+    </style>
+  </head>
+  <body>
+    <p> 여기는 p태그의 box model border, padding, margin, width등 옵션 설정을 확인하는 문장임 </p>
+    다음의 내용은 <a href="#"> a태그의 box model border, padding, margin, width등 옵션 설정을 확인하는 문장임 </a>
+    <p> 1. block 타입의 태그들은 padding, margin, width에 대한 속성등리 전부 들어갈 수 있다. <br />
+        2. inline 타입의 태그들은 padding, margin 속성들만 작동한다.(width의 영향을 받지 않음)
+    </p><br />
+    <img src="bead.jpg" style="padding:10px;margin:40px;" title="구슬이미지"/>
+  </body>
+</html>

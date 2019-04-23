@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title> web font 활용하기 </title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Srisakdi" rel="stylesheet">
+    <style>
+      h1, a {
+        border : 1px solid red;
+      }
+      h1 {
+        display : inline;
+      }
+      p {
+        border :2px solid blue;
+        color : #11ff00;
+        font-family: 'Srisakdi', cursive;
+        font-family: 'Gloria Hallelujah', cursive;
+        font-size : 3rem;
+        font-weight : bold;
+        line-height : 1.2;
+      }
+      div {
+        border :1px solid red;
+        color : rgb(0,0,255);
+        font-size : 1rem;
+        font-weight : bold;
+        font-family: arial, verdana, serif;
+        text-align : center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2> h 속성은 라인 전체를 잡는 block 속성이나 display:inline;을 사용하여 block 속성을 해제함  </h2>
+    <h1> 여기는 h1 태그 속성 확인 </h1>
+    <a href="#"> a태그 </a>
+    <br> <h2> ----- 위와 아래의 비교 (a태그의 크기) ---- </h2><br>
+    <h1> 여기는 h1 태그 속성 확인 <a href="#"> a태그 </a> </h1>
+    <p> web font 활용예시 </p>
+    <div style="display:inline;"> 여기는 div 영역임 ( 가운데 정렬,  justify는 긴글의 경우 끝을 깔끔하게 정렬함 )</div>
+    <div style="display:inline;"> div 의 block 속성 해제 확인 </div>
+    </body>
+</html>
